@@ -1,0 +1,26 @@
+{
+  "name": "turborepo-test-workspace-base",
+  "version": "1.0.0",
+  "main": "dist/turborepo-test-workspace-base.cjs.js",
+  "module": "dist/turborepo-test-workspace-base.esm.js",
+  "scripts": {
+    "build": "rimraf dist/; sleep 5; preconstruct build"
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "xpreconstruct": {
+    "entrypoints": [
+      "./index.js"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@preconstruct/cli": "^2.1.5"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
